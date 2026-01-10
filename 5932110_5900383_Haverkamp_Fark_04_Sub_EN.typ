@@ -1,0 +1,156 @@
+#import "@preview/lilaq:0.5.0" as lq
+
+#set page(background: image("assets/frontpage.jpg"))
+#v(206pt)
+#h(105pt)
+Jakob Haverkamp
+#h(155pt)
+5932110
+
+#h(105pt)
+Milan Fark
+#h(186pt)
+5900383
+
+#set page(background: [])
+
+#import "@local/ufr-sheet-universal:0.1.0": conf
+
+#show: doc => conf(
+  doc,
+  subject: "Electronics Laboratory",
+  date: "12.12.2025",
+  prof: "Prof. Dr. Hans Zappe",
+  semester: "WS 25/26",
+  title: "Lab 3 - MOSFETs",
+  header_start: 2,
+  name: "jh1444, mf643",
+  left_header: [Jakob Haverkamp \ Milan Fark \ jh1444, #h(5pt)mf643],
+)
+#counter(page).update(1)
+#set text(
+  lang: "en",
+  size: 11pt,
+)
+
+#set figure(numbering: "1")
+#show ref: set text(fill: blue)
+
+
+= 4.2 Non-inverting amplifier
+
+== 4.2.1 Simulation
+
+=== Introduction
+
+=== Circuit Diagrams:
+
+#figure(caption: [LTSpice _non-inverting amplifier_ circuit diagram])[
+  // #image("assets/4.2.1.jpg", width: 39%)
+] <4.2.1.circuit>
+
+=== Plots:
+
+#include "1.2.plot_sim.typ"
+
+=== Text Questions:
+
+=== Conclusion:
+
+== 4.2.2. Measurement
+
+=== Introduction
+
+
+=== Circuit Diagrams:
+
+#figure(caption: [Schematic of the _non-inverting amplifier_ circuit])[
+  // #image("assets/4.2.2.circuit.jpg", width: 27%)
+] <4.2.2.circuit>
+
+=== Plots:
+
+#include "1.2.plot_real.typ"
+
+=== Text Questions:
+
+=== Conclusion
+
+= 4.3 Voltage-to-current converter
+
+== 4.3.1 Simulation
+
+=== Introduction
+
+=== Circuit Diagrams:
+
+#figure(caption: [LTSpice _voltage-to-current converter_ circuit diagram])[
+  // #image("assets/4.3.1.jpg", width: 39%)
+] <4.3.1.circuit>
+
+=== Plots:
+
+#include "1.2.plot_sim.typ"
+
+=== Text Questions:
+
+=== Conclusion:
+
+== 4.3.2. Measurement
+
+=== Introduction
+
+
+=== Circuit Diagrams:
+
+#figure(caption: [Schematic of the _voltage-to-current converter_ circuit])[
+  // #image("assets/4.3.2.circuit.jpg", width: 27%)
+] <fig5>
+
+=== Plots:
+
+#include "1.2.plot_real.typ"
+
+=== Text Questions:
+
+=== Conclusion
+
+= 4.4 Transimpedance Amplifier
+
+== 4.4.1 Simulation
+
+=== Introduction
+
+=== Circuit Diagrams:
+
+#figure(caption: [LTSpice _transimpedance amplifier_ circuit diagram])[
+  // #image("assets/4.4.1.jpg", width: 39%)
+] <fig1>
+
+=== Plots:
+
+#include "1.2.plot_sim.typ"
+
+=== Text Questions:
+
+=== Conclusion:
+
+== 4.4.2. Measurement
+
+=== Introduction
+
+
+=== Circuit Diagrams:
+
+#figure(caption: [Schematic of the _transimpedance amplifier_ circuit])[
+  // #image("assets/4.4.2.circuit.jpg", width: 27%)
+] <fig5>
+
+=== Plots:
+
+#include "1.2.plot_real.typ"
+
+=== Text Questions:
+
+=== Conclusion
+
