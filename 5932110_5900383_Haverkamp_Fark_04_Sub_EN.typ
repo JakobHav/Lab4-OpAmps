@@ -1,7 +1,7 @@
 #import "@preview/lilaq:0.5.0" as lq
 
 #set page(background: image("assets/frontpage.jpg"))
-#v(206pt)
+#v(209pt)
 #h(105pt)
 Jakob Haverkamp
 #h(155pt)
@@ -19,10 +19,10 @@ Milan Fark
 #show: doc => conf(
   doc,
   subject: "Electronics Laboratory",
-  date: "12.12.2025",
+  date: "11.01.2025",
   prof: "Prof. Dr. Hans Zappe",
   semester: "WS 25/26",
-  title: "Lab 3 - MOSFETs",
+  title: "Lab 4 - MOSFETs",
   header_start: 2,
   name: "jh1444, mf643",
   left_header: [Jakob Haverkamp \ Milan Fark \ jh1444, #h(5pt)mf643],
@@ -46,7 +46,7 @@ Milan Fark
 === Circuit Diagrams:
 
 #figure(caption: [LTSpice _non-inverting amplifier_ circuit diagram])[
-  // #image("assets/4.2.1.jpg", width: 39%)
+  #image("assets/4.2.1.circuit.jpg", width: 60%)
 ] <4.2.1.circuit>
 
 === Plots:
@@ -65,7 +65,7 @@ Milan Fark
 === Circuit Diagrams:
 
 #figure(caption: [Schematic of the _non-inverting amplifier_ circuit])[
-  // #image("assets/4.2.2.circuit.jpg", width: 27%)
+  #image("assets/4.2.2.circuit.jpg", width: 43%)
 ] <4.2.2.circuit>
 
 === Plots:
@@ -85,12 +85,12 @@ Milan Fark
 === Circuit Diagrams:
 
 #figure(caption: [LTSpice _voltage-to-current converter_ circuit diagram])[
-  // #image("assets/4.3.1.jpg", width: 39%)
+  // #image("assets/4.3.1.circuit.jpg", width: 39%)
 ] <4.3.1.circuit>
 
 === Plots:
 
-#include "1.2.plot_sim.typ"
+#include "1.3.plot_sim.typ"
 
 === Text Questions:
 
@@ -104,12 +104,12 @@ Milan Fark
 === Circuit Diagrams:
 
 #figure(caption: [Schematic of the _voltage-to-current converter_ circuit])[
-  // #image("assets/4.3.2.circuit.jpg", width: 27%)
+  #image("assets/4.3.2.circuit.jpg", width: 57%)
 ] <fig5>
 
 === Plots:
 
-#include "1.2.plot_real.typ"
+#include "1.3.plot_real.typ"
 
 === Text Questions:
 
@@ -124,12 +124,12 @@ Milan Fark
 === Circuit Diagrams:
 
 #figure(caption: [LTSpice _transimpedance amplifier_ circuit diagram])[
-  // #image("assets/4.4.1.jpg", width: 39%)
+  #image("assets/4.4.1.circuit.jpg", width: 59%)
 ] <fig1>
 
 === Plots:
 
-#include "1.2.plot_sim.typ"
+#include "1.4.plot_sim.typ"
 
 === Text Questions:
 
@@ -143,12 +143,12 @@ Milan Fark
 === Circuit Diagrams:
 
 #figure(caption: [Schematic of the _transimpedance amplifier_ circuit])[
-  // #image("assets/4.4.2.circuit.jpg", width: 27%)
+  #image("assets/4.4.2.circuit.jpg", width: 47%)
 ] <fig5>
 
 === Plots:
 
-#include "1.2.plot_real.typ"
+#include "1.4.plot_real.typ"
 
 === Text Questions:
 
