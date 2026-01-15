@@ -43,10 +43,12 @@ Milan Fark
 
 === Introduction
 
+In this section, we simulated a non-inverting amplifier circuit shown in @4.3.1.circuit.
+
 === Circuit Diagrams:
 
-#figure(caption: [LTSpice _non-inverting amplifier_ circuit diagram])[
-  #image("assets/4.2.1.circuit.jpg", width: 60%)
+#figure(caption: [LTSpice _non-inverting amplifier_ circuit diagram#footnote[We changed `AC 5` to `AC 1` (so )]])[
+  #image("assets/4.2.1.circuit.jpg", width: 50%)
 ] <4.2.1.circuit>
 
 === Plots:
@@ -85,7 +87,7 @@ Milan Fark
 === Circuit Diagrams:
 
 #figure(caption: [LTSpice _voltage-to-current converter_ circuit diagram])[
-  // #image("assets/4.3.1.circuit.jpg", width: 39%)
+  #image("assets/4.3.1.circuit.jpg", width: 49%)
 ] <4.3.1.circuit>
 
 === Plots:
@@ -113,6 +115,8 @@ Milan Fark
 
 === Text Questions:
 
+we took the voltage after the LED and divided by 470 $Omega$. Perfection.
+
 === Conclusion
 
 = 4.4 Transimpedance Amplifier
@@ -124,7 +128,7 @@ Milan Fark
 === Circuit Diagrams:
 
 #figure(caption: [LTSpice _transimpedance amplifier_ circuit diagram])[
-  #image("assets/4.4.1.circuit.jpg", width: 59%)
+  #image("assets/4.4.1.circuit.jpg", width: 55%)
 ] <fig1>
 
 === Plots:

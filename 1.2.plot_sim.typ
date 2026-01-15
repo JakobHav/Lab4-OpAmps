@@ -13,13 +13,14 @@
 )[
   #lq.diagram(
     width: 90%,
-    height: 24%,
+    height: 28%,
     // title: [],
     xlabel: [*Frequency* [kHz]],
     ylabel: [*Amplification* [dB]],
-    legend: (position: left + horizon, dx: -0pt, dy: -10pt, stroke: none),
+    // legend: (position: left + horizon, dx: -0pt, dy: -30pt, stroke: none),
+    legend: (position: right + top, dx: -0pt, dy: -27pt, stroke: none),
     // xlim: (calc.pow(10, 3) * 4.5, calc.pow(10, 6) * 6),
-    ylim: (-36, 31),
+    ylim: (-31, 31),
     xscale: lq.scale.log(),
 
     xaxis: (
