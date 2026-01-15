@@ -47,7 +47,7 @@ In this section, we simulated a non-inverting amplifier circuit shown in @4.3.1.
 
 === Circuit Diagrams:
 
-#figure(caption: [LTSpice _non-inverting amplifier_ circuit diagram])[
+#figure(caption: [LTSpice _non-inverting amplifier_ circuit diagram#footnote[We changed `AC 5` to `AC 1` (so )]])[
   #image("assets/4.2.1.circuit.jpg", width: 50%)
 ] <4.2.1.circuit>
 
