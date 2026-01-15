@@ -39,7 +39,7 @@
       position: right,
       label: [*transimpedance factor*],
       lq.plot(id, transimpedance, mark: ".", mark-size: 0pt, label: [_t. factor_]),
-      lim: (-15666660, 0),
+      lim: (-14231960, 0),
     ),
     lq.plot(id, vout, mark: ".", mark-size: 0pt, label: [$V_(o u t)$]),
   )
