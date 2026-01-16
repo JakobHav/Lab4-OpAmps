@@ -59,6 +59,8 @@ In this section, we simulated a non-inverting amplifier circuit shown in @4.3.1.
 
 === Text Questions:
 
+With $R_1$ in the circuit, it reaches $0$ dB amplification at $f approx 3184$ kHz and has $$
+
 === Conclusion:
 
 == 4.2.2. Measurement

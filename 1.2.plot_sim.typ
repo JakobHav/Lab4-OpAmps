@@ -77,3 +77,12 @@
     lq.plot(freq2, gain2, mark: ".", label: [Amp. no $R_1$], mark-size: 0pt),
   )
 ] <fig10>
+
+
+#let fg = freq.zip(gain)
+#let x = fg.filter(x => calc.abs(x.at(1)) < 0.02)
+
+#let num = 350
+#let avg = gain.slice(0, num).sum() / num
+
+#avg
