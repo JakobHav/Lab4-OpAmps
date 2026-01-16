@@ -47,8 +47,10 @@ In this section, we simulated a non-inverting amplifier circuit shown in @4.3.1.
 
 === Circuit Diagrams:
 
-#figure(caption: [LTSpice _non-inverting amplifier_ circuit diagram#footnote[We changed `AC 5` to `AC 1` (so )]])[
-  #image("assets/4.2.1.circuit.jpg", width: 50%)
+#figure(
+  caption: [LTSpice _non-inverting amplifier_ circuit diagram#footnote[We changed `AC 5` to `AC 1` (we originally tried to do 15 mV as in the real measurement, but with 1 V we got very similar values to 15 mV so we decided on that.)]],
+)[
+  #image("assets/4.2.1.circuit.jpg", width: 45%)
 ] <4.2.1.circuit>
 
 === Plots:
@@ -115,7 +117,9 @@ In this section, we simulated a non-inverting amplifier circuit shown in @4.3.1.
 
 === Text Questions:
 
-we took the voltage after the LED and divided by 470 $Omega$.
+The current through the LED was measured as the voltage drop over $R_89 = 470 Omega$ at `Pin1` of `JP15` and calculated by $I_D = V_(P i n 1) / R_89$.
+
+The voltage drop of the LED was calculated by taking the difference of the voltage between `Pin1` and `Pin2`
 
 $V_(s(m a x)) approx 8.1$ V
 
