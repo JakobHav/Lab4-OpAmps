@@ -14,13 +14,13 @@
     height: 21%,
     xlabel: [*$I_(p d)$* [nA]],
     ylabel: [*$V_(o u t)$* [V]],
-    legend: (position: left + horizon),
+    legend: (position: right + top),
     // ylim: (-0.001, 5.15),
     xlim: (-520, 520),
 
     cycle: (
       it => {
-        set lq.style(stroke: (paint: red.darken(-20%), thickness: .75pt, dash: "solid"))
+        set lq.style(stroke: (paint: red.darken(-20%), thickness: .5pt, dash: "solid"))
         it
       },
       it => {
@@ -39,7 +39,7 @@
       position: right,
       label: [*transimpedance factor*],
       lq.plot(id, transimpedance, mark: ".", mark-size: 0pt, label: [_t. factor_]),
-      lim: (-14231960, 0),
+      lim: (-18231960, 0),
     ),
     lq.plot(id, vout, mark: ".", mark-size: 0pt, label: [$V_(o u t)$]),
   )

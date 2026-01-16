@@ -20,7 +20,7 @@
     // legend: (position: left + horizon, dx: -0pt, dy: -30pt, stroke: none),
     legend: (position: right + top, dx: -0pt, dy: -27pt, stroke: none),
     // xlim: (calc.pow(10, 3) * 4.5, calc.pow(10, 6) * 6),
-    ylim: (-31, 31),
+    ylim: (-20, 31),
     xscale: lq.scale.log(),
 
     xaxis: (
@@ -71,7 +71,7 @@
       label: [*Phase* [deg]],
       lq.plot(freq, phase, mark: ".", label: [Phase  with $R_1$], mark-size: 0pt),
       lq.plot(freq2, phase2, mark: ".", label: [Phase no $R_1$], mark-size: 0pt),
-      lim: (-200, 200),
+      lim: (-130, 200),
     ),
 
     lq.plot(freq2, gain2, mark: ".", label: [Amp. no $R_1$], mark-size: 0pt),
@@ -85,4 +85,4 @@
 #let num = 350
 #let avg = gain.slice(0, num).sum() / num
 
-#avg
+// #avg
