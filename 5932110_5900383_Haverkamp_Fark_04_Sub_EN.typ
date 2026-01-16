@@ -115,7 +115,9 @@ In this section, we simulated a non-inverting amplifier circuit shown in @4.3.1.
 
 === Text Questions:
 
-we took the voltage after the LED and divided by 470 $Omega$. Perfection.
+we took the voltage after the LED and divided by 470 $Omega$.
+
+$V_(s(m a x)) approx 8.1$ V
 
 === Conclusion
 

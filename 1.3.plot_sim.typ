@@ -11,7 +11,7 @@
 
 #show: lq.theme.skyline
 
-#figure(caption: [Simulated voltage-to-current converter])[
+#figure(caption: [Simulated LED current])[
   #lq.diagram(
     width: 80%,
     height: 21%,
@@ -44,7 +44,7 @@
 
 #show: lq.theme.skyline
 
-#figure(caption: [Simulated voltage-to-current converter])[
+#figure(caption: [Simulated LED power])[
   #lq.diagram(
     width: 80%,
     height: 21%,
