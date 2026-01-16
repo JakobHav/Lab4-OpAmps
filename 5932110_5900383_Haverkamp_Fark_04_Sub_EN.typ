@@ -158,5 +158,7 @@ $V_(s(m a x)) approx 8.1$ V
 
 === Text Questions:
 (c) to estimate the current over D16, we use the relation $U= - R * I$ where R is R88 as it is inside the feedback loop of the amplifier circuit. This leads to $I = -U/R$
+(d) The current flows in the opposite direction of the input current, because the photodiode is in the same direction as the red LED but used to generate the current.
+
 === Conclusion
 
