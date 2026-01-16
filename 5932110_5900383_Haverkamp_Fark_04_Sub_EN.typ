@@ -155,6 +155,6 @@ we took the voltage after the LED and divided by 470 $Omega$. Perfection.
 #include "1.4.plot_real.typ"
 
 === Text Questions:
-
+(c) to estimate the current over D16, we use the relation $U= - R * I$ where R is R88 as it is inside the feedback loop of the amplifier circuit. This leads to $I = -U/R$
 === Conclusion
 
