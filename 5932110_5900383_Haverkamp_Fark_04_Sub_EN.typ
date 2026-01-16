@@ -144,7 +144,7 @@ In this section the goal is to simulate a transimpedance amplifier, but used a c
 #include "1.4.plot_sim.typ"
 
 === Text Questions:
-As the transimpedance factor is $V_(o u t) / I_(p d)$ and they are linearly dependant, as shown in @fig12 
+As the transimpedance factor is $V_(o u t) / I_(p d)$ and they are linearly dependant, as shown in @fig12, the transimpedance factor is roughly -1. The factor is mainly dependant on the resist $R_f$. 
 === Conclusion:
 
 == 4.4.2. Measurement

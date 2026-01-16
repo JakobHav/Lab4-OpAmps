@@ -44,3 +44,4 @@
     lq.plot(id, vout, mark: ".", mark-size: 0pt, label: [$V_(o u t)$]),
   )
 ]
+<fig12>
