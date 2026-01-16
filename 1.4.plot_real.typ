@@ -9,7 +9,7 @@
   #lq.diagram(
     width: 80%,
     height: 21%,
-    xlabel: [*$I_(d p)$* [$mu$A]],
+    xlabel: [*$I_(p d)$* [$mu$A]],
     ylabel: [*$V_(o)$* [V]],
     legend: (position: left + horizon),
     //ylim: (-2, 25.15),
@@ -66,8 +66,8 @@
 
 lq.yaxis(
       position: right,
-      label: [*$abs(I_(d p))$* [$mu$ A]],
-      lq.plot(Vs, Ipd.map(x => calc.abs(x)), mark: ".", mark-size: 0pt, label: [_$abs(I_(d p))$_]),
+      label: [*$abs(I_(p d))$* [$mu$ A]],
+      lq.plot(Vs, Ipd.map(x => calc.abs(x)), mark: ".", mark-size: 0pt, label: [_$abs(I_(p d))$_]),
       //im: (-14231960, 0),
     ),
     
