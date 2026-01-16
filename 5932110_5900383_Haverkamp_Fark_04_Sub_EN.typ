@@ -144,9 +144,9 @@ In this section the goal is to simulate a transimpedance amplifier, but used a c
 #include "1.4.plot_sim.typ"
 
 === Text Questions:
-As the transimpedance factor is $V_(o u t) / I_(p d)$ and they are linearly dependant, as shown in @fig12, the transimpedance factor is roughly -1. The factor is mainly dependant on the resist $R_f$. 
+@fig12 shows the relation of $V_(o u t)$ and $I_(p d)$. They are linearly dependant. As the transimpedance factor is $V_(o u t) / I_(p d)$ the transimpedance factor is roughly $-1 * 10^7$. The factor is mainly determined by the resist $R_f$. 
 === Conclusion:
-
+The transimpedance amplifier can be used to transform a current into a voltage source with a factor determined by the resist in the feedback loop.
 == 4.4.2. Measurement
 
 === Introduction
