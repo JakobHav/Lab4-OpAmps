@@ -13,7 +13,7 @@
 )[
   #lq.diagram(
     width: 90%,
-    height: 28%,
+    height: 23%,
     // title: [],
     xlabel: [*Frequency* [kHz]],
     ylabel: [*Amplification* [dB]],
@@ -76,7 +76,7 @@
 
     lq.plot(freq2, gain2, mark: ".", label: [Amp. no $R_1$], mark-size: 0pt),
   )
-] <fig10>
+] <fig2>
 
 
 #let fg = freq.zip(gain)

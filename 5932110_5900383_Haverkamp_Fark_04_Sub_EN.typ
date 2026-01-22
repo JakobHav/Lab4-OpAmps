@@ -43,7 +43,7 @@ Milan Fark
 
 === Introduction
 
-In this section, we simulated a non-inverting amplifier circuit shown in @4.3.1.circuit.
+In this section, we simulated a non-inverting amplifier circuit shown in @4.3.1.circuit. We ran two simulations, one with $R_1 = 2 "k"Omega$ connected to the feedback loop and the other with it disconnected, effectively setting its value to infinity. For both setups we ran an ac frequency sweep from 5 kHz to 5 MHz with 500 points per decade and plotted both results in @fig2.
 
 === Circuit Diagrams:
 
@@ -59,9 +59,13 @@ In this section, we simulated a non-inverting amplifier circuit shown in @4.3.1.
 
 === Text Questions:
 
-With $R_1$ in the circuit, it reaches $0$ dB amplification at $f approx 3184$ kHz and ?
+With $R_1$ in the circuit, it reaches $0$ dB amplification at $f approx 3184$ kHz
 
 === Conclusion:
+
+We successfully simulated the non-inverting amplifier. With $R_1$ connected, we got amplification values of approx 20 dB for frequencies under 150 kHz. We got a gain-bandwith of 3184 kHz. The phase shift is 0° at the beginning but linearly decreases to $approx$ -120° at the end.
+
+Without $R_1$, the amplification was $approx$ 0 dB under 3 MHz with a phase shift of $phi$ < 25$°$ for frequencies under 1 MHz, so very little phase sjift
 
 == 4.2.2. Measurement
 
@@ -144,7 +148,7 @@ In this section the goal is to simulate a transimpedance amplifier, but used a c
 #include "1.4.plot_sim.typ"
 
 === Text Questions:
-As the transimpedance factor is $V_(o u t) / I_(p d)$ and they are linearly dependant, as shown in @fig12, the transimpedance factor is roughly -1. The factor is mainly dependant on the resist $R_f$. 
+As the transimpedance factor is $V_(o u t) / I_(p d)$ and they are linearly dependant, as shown in @fig12, the transimpedance factor is roughly -1. The factor is mainly dependant on the resist $R_f$.
 === Conclusion:
 
 == 4.4.2. Measurement
