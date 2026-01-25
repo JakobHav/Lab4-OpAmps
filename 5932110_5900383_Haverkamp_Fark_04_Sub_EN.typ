@@ -91,7 +91,7 @@ Without $R_1$, the amplification was $approx$ 0 dB under 3 MHz with a phase shif
 == 4.3.1 Simulation
 
 === Introduction
-
+In this section we took a look at the voltage to current converter with an integrated LED.
 === Circuit Diagrams:
 
 #figure(caption: [LTSpice _voltage-to-current converter_ circuit diagram])[
@@ -103,13 +103,13 @@ Without $R_1$, the amplification was $approx$ 0 dB under 3 MHz with a phase shif
 #include "1.3.plot_sim.typ"
 
 === Text Questions:
-
-=== Conclusion:
-
+As the power dissipated by the LED is $P = V * I$ the graph of the LED power (@fig7) is very similar to the graph of the current (@fig6), just multiplied with the voltage. The characteristics show the typical curve of a LED with no current flowing through whilst $V_s$ is below the forward voltage of the LED. The current rises in relation to the Voltage. All power dissipated by the LED is in the form of either light or heat. LED do not emit much heat, instead dissipating the power mainly by emitting light. Because the power rises with rising voltage, the LED emits more light with increasing voltage $V_s$ 
+=== Conclusion: 
+The voltage to current converter takes a known voltage and has a calculable current as output.
 == 4.3.2. Measurement
 
 === Introduction
-
+In this section the goal was to measure the voltage to current converter and compare with the simulation.
 
 === Circuit Diagrams:
 
