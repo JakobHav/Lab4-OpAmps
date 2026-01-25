@@ -137,12 +137,12 @@ The current through the LED was measured as the voltage drop over $R_89 = 470 Om
 
 The voltage drop of the LED was calculated by taking the difference of the voltage between `Pin1` and `Pin2`
 
-The measured curves show a stop of the linear relation between the current $I_D$ and the voltage $V_S$ (@fig9). At the point $V_(s(m a x))$ the curve becomes flat instead of continuing linearly. This is because the 
+The measured curves show a stop of the linear relation between the current $I_D$ and the voltage $V_S$ (@fig9). At the point $V_(s(m a x))$ the curve becomes flat instead of continuing linearly. This is because the operational Amplifier reaches saturation and stops increasing the output voltage.
 
 $V_(s(m a x)) approx 8.1$ V
 
 === Conclusion
-
+The measured data shows some difference to the simulated one, the Op Amp behaves differently and real world physics have to be taken into account when calculating the data.
 = 4.4 Transimpedance Amplifier
 
 == 4.4.1 Simulation
