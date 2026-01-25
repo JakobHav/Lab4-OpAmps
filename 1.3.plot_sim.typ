@@ -40,7 +40,7 @@
 
     lq.plot(vs, i, mark: ".", mark-size: 0pt), // label: [$V_(o u t)$]),
   )
-]
+] <fig6>
 
 #show: lq.theme.skyline
 
@@ -73,4 +73,4 @@
 
     lq.plot(vs, power, mark: ".", mark-size: 0pt), // label: [$V_(o u t)$]),
   )
-]
+] <fig7>
