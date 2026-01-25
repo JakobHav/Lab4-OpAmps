@@ -10,11 +10,11 @@
 #show: lq.theme.skyline
 
 #figure(
-  caption: [Simulated phase and amplification of the non-inverting amplifier for a frequency of  5kHz-5MHz on a logarithmic scale. $R_1$= 2 k$Omega$],
+  caption: [Simulated phase and amplification of the non-inverting amplifier for a frequency of  5 kHz - 5 MHz on a logarithmic scale. $R_1$= 2 k$Omega$],
 )[
   #lq.diagram(
     width: 90%,
-    height: 28%,
+    height: 27.5%,
     // title: [],
     xlabel: [*Frequency* [kHz]],
     ylabel: [*Amplification* [dB]],
@@ -64,16 +64,25 @@
     ),
 
 
-    lq.plot(freq, gain, mark: ".", label: [Amp. with $R_1$], mark-size: 0pt),
+    lq.plot(freq, gain, mark: ".", label: [Amp. with $R_61$], mark-size: 0pt),
 
     lq.yaxis(
       position: right,
       label: [*Phase* [deg]],
-      lq.plot(freq, phase, mark: ".", label: [Phase  with $R_1$], mark-size: 0pt),
-      lq.plot(freq2, phase2, mark: ".", label: [Phase no $R_1$], mark-size: 0pt),
+      lq.plot(freq, phase, mark: ".", label: [Phase  with $R_61$], mark-size: 0pt),
+      lq.plot(freq2, phase2, mark: ".", label: [Phase no $R_61$], mark-size: 0pt),
       lim: (-325, 200),
     ),
 
-    lq.plot(freq2, gain2, mark: ".", label: [Amp. no $R_1$], mark-size: 0pt),
+    lq.plot(freq2, gain2, mark: ".", label: [Amp. no $R_61$], mark-size: 0pt),
   )
 ] <fig10>
+
+#let fg = freq.zip(gain)
+#let x = fg.filter(x => calc.abs(x.at(1)) < .25)
+
+#let num = 350
+#let avg = gain.slice(0, num).sum() / num
+
+
+// #avg

@@ -79,10 +79,11 @@
 ] <fig2>
 
 
-#let fg = freq.zip(gain)
-#let x = fg.filter(x => calc.abs(x.at(1)) < 0.02)
+#let fg = freq.zip(gain2)
+#let x = fg.filter(x => calc.abs(x.at(1)) < 0.0000001)
 
 #let num = 350
 #let avg = gain.slice(0, num).sum() / num
+
 
 // #avg

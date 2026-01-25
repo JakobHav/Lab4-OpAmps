@@ -59,23 +59,27 @@ In this section, we simulated a non-inverting amplifier circuit shown in @4.3.1.
 
 === Text Questions:
 
-With $R_1$ in the circuit, it reaches $0$ dB amplification at $f approx 3184$ kHz
+With $R_1$ in the circuit, it reaches $0$ dB amplification at $f approx 3184$ kHz, so the gain-bandwith is $3184 "kHz" dot (1 + R_f / R_1) = 3184 "kHz" dot (1 + (18 "k"Omega) / (2 "k"Omega)) = 31 840 "kHz"$.
+
+Without $R_1$ it crosses 0 dB at 103.03 kHz, so it has a gain-bandwith of $1 dot 103.03 "kHz" = 103.03 "kHz"$
+
 
 === Conclusion:
 
-We successfully simulated the non-inverting amplifier. With $R_1$ connected, we got amplification values of approx 20 dB for frequencies under 150 kHz. We got a gain-bandwith of 3184 kHz. The phase shift is 0° at the beginning but linearly decreases to $approx$ -120° at the end.
+We successfully simulated the non-inverting amplifier. With $R_1$ connected, we got amplification values of approx 20 dB for frequencies under 150 kHz. We got a gain-bandwith of 31840 kHz. The phase shift is 0° at the beginning but linearly decreases to $approx$ -120° at the end.
 
-Without $R_1$, the amplification was $approx$ 0 dB under 3 MHz with a phase shift of $phi$ < 25$°$ for frequencies under 1 MHz, so very little phase sjift
+Without $R_1$, the amplification was $approx$ 0 dB under 3 MHz with a peak going over 0 dB at 100 kHz and little phase shift of $phi$ < 25$°$ for frequencies under 1 MHz.
 
 == 4.2.2. Measurement
 
 === Introduction
 
+In this section, we measured the _non-inverting amplifier_ shown in @4.2.2.circuit. As in the simulation, we measured twice, first with the Resistor $R_61 = 2 "k"Omega$ connected trough the Jumper JP13, the other with it not connected. For both, we meausured an AC input from 5 kHz to 5 MHz with 500 points per decade. The feedback resistor $R_f = 18 "k"Omega$
 
 === Circuit Diagrams:
 
 #figure(caption: [Schematic of the _non-inverting amplifier_ circuit])[
-  #image("assets/4.2.2.circuit.jpg", width: 43%)
+  #image("assets/4.2.2.circuit.jpg", width: 35%)
 ] <4.2.2.circuit>
 
 === Plots:
@@ -84,7 +88,13 @@ Without $R_1$, the amplification was $approx$ 0 dB under 3 MHz with a phase shif
 
 === Text Questions:
 
+With $R_61: 584.93 "kHz"$ which corresponds to a gain-bandwith of $584.93 "kHz" dot (1 + R_f / R_1) = 584.93 "kHz" dot (1 + (18 "k"Omega) / (2 "k"Omega)) = 5849.3 "kHz"$.
+
+Without $R_61$, the gain crosses 0dB at $7.78 "kHz"$, so it has a gain-bandwith of 7.78 kHz.
+
 === Conclusion
+
+We successfully measured the _non-inverting amplifier_ and saw really similar meausurements to what we simulated earlier, when we used $V_i = 1 "V"$ in the simulation and $V_i =$15 mV in the measurement. In the measurement the phase shift is higher than in the simulation and reaches $phi approx -200°$. The amplification falls to $approx$ -35 dB for high frequencies in both cases, which is sigificantly lower than in the simulation, where it drops to $approx$ -5 dB.
 
 = 4.3 Voltage-to-current converter
 
