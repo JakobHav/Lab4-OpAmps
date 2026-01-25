@@ -127,6 +127,8 @@ The current through the LED was measured as the voltage drop over $R_89 = 470 Om
 
 The voltage drop of the LED was calculated by taking the difference of the voltage between `Pin1` and `Pin2`
 
+The measured curves show a stop of the linear relation between the current $I_D$ and the voltage $V_S$ (@fig9). At the point $V_(s(m a x))$ the curve becomes flat instead of continuing linearly. 
+
 $V_(s(m a x)) approx 8.1$ V
 
 === Conclusion
