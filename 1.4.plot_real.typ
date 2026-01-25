@@ -1,7 +1,7 @@
 #import "@preview/lilaq:0.5.0" as lq
 #let (time, Vs, Vo) = lq.load-txt(read("assets/4.4.2.Vs_C1.Vo_C2.txt"), delimiter: "\t", skip-rows: 1)
 
-#let Ipd = Vo.map(x => 1e6 * ( -x / 1e6))
+#let Ipd = Vo.map(x => 1e6 * (-x / 10e6))
 
 #show: lq.theme.skyline
 
@@ -55,7 +55,6 @@
         set lq.style(stroke: (paint: red.darken(-0%), thickness: .75pt, dash: "dashed"))
         it
       },
-      
     ),
 
     xaxis: (
@@ -64,15 +63,13 @@
       // subticks: 4,
     ),
 
-lq.yaxis(
+    lq.yaxis(
       position: right,
       label: [*$abs(I_(p d))$* [$mu$ A]],
       lq.plot(Vs, Ipd.map(x => calc.abs(x)), mark: ".", mark-size: 0pt, label: [_$abs(I_(p d))$_]),
       //im: (-14231960, 0),
     ),
-    
-    lq.plot(Vs, Vo, mark: ".", mark-size: 0pt, label: [$V_(o u t)$]),
 
-    
+    lq.plot(Vs, Vo, mark: ".", mark-size: 0pt, label: [$V_(o u t)$]),
   )
 ]
